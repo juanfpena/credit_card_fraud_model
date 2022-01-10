@@ -35,3 +35,12 @@ def pay_to_bill_discretizer(x):
         return 2
     else:
         return 3
+
+
+def pay_six_discretizer(x):
+    if x < 0:
+        return 'pay_duly'
+    if x < 2:
+        return 'slight delay'
+    else:
+        return 'huge delay'
